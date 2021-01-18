@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz </title>
+    <link rel="stylesheet" href='./assets/css/style.css'>
+</head>
+<body>
+    <!-- BEGIN HEADER-->
+    <header class="header_container">
+        <div class ="header_style">
+            <div class="scoring">
+                <button id="past_scores">View Highscores</button>
+            </div>
+            <div class="info_box">
+                <div class="info_title">
+                    <span>Quiz Rules</span>
+                </div>
+                <div class="buttons">
+                    <button class="quit">Exit Quiz</button>
+                    <button class="restart">Continue</button>
+                </div>
+            <div class="start_btn"><button>Start Quiz</button></div>
+            <div class="timer">
+                Time
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Quiz Box Coding Starts -->
+    <main class="quiz_box">
+        <header class="start_quiz">
+            <h1 class="title">Awesome Coding Quiz</h1>
+            <ol class="info_list">
+                <li class="info">You have 1 minute and 40 seconds to answer all 10 questions.</li>
+                <li class="info">Each time you get the answer correct, 5 seconds will be added to the timer.</li>
+                <li class="info">Each time an incorrect answer is given, 10 seconds will be taken from the timer.</li>
+                <li class="info">The amount of seconds left at the end will serve as your score.</li>
+                <li class="info">Score high to have your name added to the High Score List.</li>
+                <li class="info">Click the "Start Quiz" button to begin the quiz.</li>
+            </ol>
+            <button id="start_btn">Start Quiz</button>
+        </header>
+        <section class="container hide">
+            <div class="que_text">
+                <span>What does HTML stand for?</span>
+            </div>
+            <div class="option_list">
+                <div class="options">
+                    <span>Hypertext Preprocessor</span>
+                    <div class="icon_tick"><i class="fas fa-times"></i></fa-times></div>
+                </div>
+                <div class="options">
+                    <span>Hypertext Markup Language</span>
+                    <div class="icon_cross"><i class="fas fa-times"></i></i></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="style_indiv">
+        <p>Timer Will Go Here</p>
+    </div>
+</div>
+<section id="high_scores">
+    <div class="style-1">
+        <div class="style-3"></div>
+        <div class="style-6">
+            <h2>High Scores</h2>
+            <ol id="high-scores-list"></ol>
+            <button id="goBack" class="go-back-btn btn-style-1">Go Back</button>
+            <button id="clearScores" class="clear-scores-btn btn-style-1">Clear All Scores</button>
+        </div>
+    </div>
+</section>
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
