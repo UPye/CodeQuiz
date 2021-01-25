@@ -1,85 +1,48 @@
+# Javascript Coding Quiz Code
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript Quiz</title>
-    <link rel= "stylesheet" href="assets\style.css">
-</head>
+## Table of Contents 
+* [Overview](#overview)
+* [Installation](#installation)
+* [Html changes](#html-changes)
+* [CSS changes](#css-changes)
+* [Link to site](#link-to-site)
+* [Screenshot](#screenshot-of-landing-page)
+* [Credits](#credits)
+* [Some help from the web](#some-help-from-the-web)
+* [License](#license)
 
-<body>
-    <header class = "header-container">
-        <div class ="header-style">
-            <div class="scoring ">
-                <button id = "see-scores">View Highscores</button>
-            </div>
-            <div class="timer">
-                Time
-            </div>
-        </div>
-    </header>
-
-    <main id= main-quiz>
-        <div class="quiz-start">
-            <h1> Coding Challenge Quiz</h1>
-            <div id = "intro-text">
-                <p>
-                    Let's test your knowledge with JavaScript! This will be a timed quiz. </br> For every wrong answer, you will be penalized 10 seconds. </br> Click the button below to begin. Good luck!
-                </p>
-                <button id="btn-start">Begin Quiz</button>
-            </div>    
-        </div>
-
-    <!--BEGIN MAIN -->
-    <main>
-        <section class="Container" id="Contain">
-            <!-- TOP DIV CONTENT [TITLE/QUESTION]-->
-            <div class="div" id="row-top">
-                <h1 class="switch" id="switch-out">Coding Quiz Challenge</h1>
-            </div>
-            <!--MIDDLE DIV CONTENT [OPENING PARAGRAPH/POSSIBLE ANSWERS]-->
-            <div class="div" id="row-middle">
-                <p class="p-style" id="question-li">Try to answer the follwing code-related question with the time
-                    limit. Keep in mind that incorrect answers will penalize your score-time by 10 seconds</>
-            </div>
-            <!--BOTTOM DIV CONTENT [START/RESULTS]-->
-            <div class="div" id="row-bottow">
-                <button onclick="buttonClick(1)" class="btn-start" id="button-start">Start Quiz</button>
-            </div>
-            <!---->
-        </section>
-        <section onclick="buttonClick" class="btn-start" id="intquestion">
-            <div class="questions-list style-1">
-                <div class="style-3"></div>
-                <div class="style-6">
-                    <ul class="questions-ul">
-                        <h2 id="question">Here is the question</h2>
-                        <li class="questions-li"><button id="answer-1" value="0" type="button"
-                                class="ans-btn">Answer-1</button></li>
-                        <li class="questions-li"><button id="answer-2" value="1" type="button"
-                                class="ans-btn">Answer-2</button></li>
-                        <li class="questions-li"><button id="answer-3" value="2" type="button"
-                                class="ans-btn">Answer-3</button></li>
-                        <li class="questions-li"><button id="answer-4" value="3" type="button"
-                                class="ans-btn btn-style-1">Answer-4</button></li>
-                    </ul>
-                    <div id="correct-wrong" class="font-weight-light font-italic">
-                        <hr>
-                        <!-- Correct or Wrong will be added via JS -->
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="final-score">
-            <div class="style-1">
-                <div class="style-3"></div>
-                <div class="style-6">
-                    <h2>All Done!</h2>
-                    <p>Your final score is: <span id="score" class="style-10">0</span></p>
-                    <p>Enter initials: <span class="style-11"><input placeholder="initials" id="initials"></span>
-                        <button id="submit-score" class="submit-score-btn btn-style-1">Submit</button>
-                    </p>
-                </div>
-            </div>
-        </section>
+## Overview
+Worked with an old high school friend to accomplish this assignment. I was assisted in getting Javascript function to work, and cleaning up my HTML code. Through this help, I was able to deploy a really good coding quiz website.
+## Installation
+When clicking the link to my site in this README and it will take you to the landing page for the site. 
+## Html changes
+Added link for js file to make passwords more random
+# CSS changes
+No changes
+## Link to site
+https://upye.github.io/week-3-challenge
+## Screenshot of landing page
+![alt text](assets/images/screenshot-horiseon-website.png)
+## Credits
+Thanks for all the help from Carlos for making this happen with GIT and GITHUB; changing computers in the middle of all this can really put a screw in things. 
+## Some help from the web
+/* helped me with making the password more random
+https://randojs.com/
+## License
+Copyright (c) 2012-2020 Scott Chacon and others
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
