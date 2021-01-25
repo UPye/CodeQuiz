@@ -20,7 +20,7 @@ Added link for js file to make passwords more random
 # CSS changes
 No changes
 ## Link to site
-https://upye.github.io/week-3-challenge
+https://upye.github.io/CodeQuiz/
 ## Screenshot of landing page
 ![alt text](assets/images/screenshot-horiseon-website.png)
 ## Credits
