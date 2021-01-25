@@ -5,102 +5,63 @@
 }
 
 
-
-body {
-    background: var(--primary-color);
-    color: var(--secondary-color);
-
-}
-
-.start_btn, .info_box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-/* Quiz button stylings */
-.start_btn button {
-    font-size: 25px;
-    font-weight: 500;
-    color: var(--tetriary-color);
-    padding: 15px 30px;
-    outline: none;
+#see-scores {
+    background-color: white;
     border: none;
-    border-radius: 5px;
-    background: var(--secondary-color);
-    cursor: pointer;
-}
-
-.info_box {
-    display: none;
-    width: 540px;
-    background: var(--primary-color);
-    border-radius: 5px;
-}
-
-.info_box .info_title {
-    height: 60px;
-    width: 100%;
-    border-bottom: 1px solid var(--secondary-color);
-    display: flex;
-    align-items: center;
-    padding: 0 35px;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.info_box .info_list {
-    padding: 15px 35px;
-}
-
-.info_box .info_list .info {
-    margin: 5px 0;
-    font-size: 17px;
-}
-
-.info_box .info_list .info span {
-    font-weight: 600;
     color: var(--secondary-color);
 }
 
-.info_box .buttons {
-    height: 60px;
+#see-scores:hover {
+    color: var(--tetriary-color); 
+}
+
+.header-style {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 0 35px;
-    border-top: 1px solid var(--secondary-color);
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 15px;
 }
 
-.info_box .buttons button {
-    margin: 0 5px;
-    height: 40px;
-    width: 100px;
-    border: 1px solid transparent;
-    background: var(--secondary-color);
-    border-radius: 5px;
-    color: var(--tetriary-color);
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
+#main-quiz {
+    text-align: center;
 }
 
-.buttons button.restart {
-    color: var(--tetriary-color);
-    border-color: var(--tetriary-color);
+.questions li {
+    list-style: none;
 }
 
-.buttons button.restart:hover {
-    background: var(--primary-color);
+#answers {
+    padding-inline-start:0px;
 }
 
-.buttons button.quit {
-    border-color: var(--secondary-color);
-    color: var(--tetriary-color);
+.btn, #btn-start {
+    background-color: var(--tetriary-color);
+    color: white; 
+    border-radius: 5px; 
+    border-style: none;
+    padding: 10px; 
+    margin: 3px; 
 }
 
-.buttons button.quit:hover {
-    background: var(--primary-color);
+.a-btn:hover, #btn-start:hover, .btn:hover {
+    background-color: var(--primary-color);
+}
+
+
+.timer {
+    color: var(--secondary-color);
+    font-size: large;
+    font-weight: bold;
+}
+
+#quiz-end{
+    display:none;
+}
+
+#high-scores {
+    display: none;
+}
+
+#questions-container h2 {
+    display:none;
 }
